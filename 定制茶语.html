@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>定制密语</title>
+		<style>
+			body{
+				background: url(背景图4.jpg) no-repeat center center;
+				background-size: cover;
+				/* 让背景图基于容器大小伸缩 */
+				background-attachment: fixed;
+				/* 当内容高度大于图片高度时，背景图像的位置相对于viewport固定 此条属性必须设置否则可能无效*/
+				background-color: #b2cfc2;
+				/* 设置背景颜色，背景图加载过程中会显示背景色 */
+			}
+			form{
+				height: 750px;
+				width: 850px;
+			    box-shadow:10px 10px 15px black;
+				background-color: white;
+				/*margin-left: 400px;*/
+				margin:auto; /*当margin设置为auto则会有居中对齐的效果*/
+			
+			}
+			hr{
+				width:80%;
+				height:3px;
+				background-color:#1f5f49 ;
+				border: 0;
+			}
+			button{
+				background-color: #519e72;
+				color: white;
+				margin-top: 20px;
+				margin-left: 380px;
+				padding: 10px;
+				border: 20px;
+			}
+			form{
+				height: 950px;
+				width: 900px;
+			
+			}
+			label{
+				margin-left: 15px;
+				
+			}
+			ol{
+				margin-left: 80px;
+			}
+			li{
+				margin-top: 10px;
+				margin-bottom: 10px;
+				color: #1f5f3d;
+				font-size: larger;
+			}
+			h1{
+				color: #1f5f3d;
+				text-align: center;
+				padding-top: 30px;
+				padding-bottom: 5px;
+				margin: 0;
+			}
+			ol{
+				margin-left: 100px;
+			}
+			h4{
+				margin-left: 250px;
+				margin-right: 250px;
+				text-align: center;
+				font-size: larger;
+				background-color: whitesmoke;
+				color: #519e77;
+			}
+			img{
+				width: 50px;
+				height: 50px;
+				float: right;
+			}
+		</style>
+	</head>
+	<body>
+		<form method="post" action="URL" autocomplete="on">
+
+			<h1>Investigation on tea tendency</h1>
+            <h1>茶叶倾向调查</h1>
+			<hr />
+			<button οnclick="myFunction()">获取十二月定制茶语 Get</button>
+			<h4 id="demo">
+				</h1>
+				<div>
+					<ol>
+						<li>您的性别
+                        <br>Your gender</li>
+						<input type="radio" name="q1" required>
+						男Male
+						<input type="radio" name="q1" required>
+						女Female
+
+						<li>您的年龄段是？
+                        <br>What is your age group?</li>
+						<input type="radio" name="q2" required>
+						18岁以下Under 18
+						<input type="radio" name="q2" required>
+						18-30岁18-30 years old
+						<input type="radio" name="q2" required>
+						31-50岁31-50 years old
+                                                
+                        <br>
+						<input type="radio" name="q2" required>
+                   
+						51-70岁51-70 years old
+						<input type="radio" name="q2" required>
+						71岁以上Over 71
+                      
+
+						<li>您日常是否会饮茶？
+                        <br>Do you drink tea everyday?</li>
+						<input type="radio" name="q3" required>
+						偶尔Occasionally
+						<input type="radio" name="q3" required>
+						有时Sometimes
+						<input type="radio" name="q3" required>
+						经常Often
+						<input type="radio" name="q3" required>
+						每天Every day
+
+						<li>您喜欢以下什么种类的茶？（可多选）
+                        <br>What kind of tea would you like? (multiple choices are allowed)</li>
+
+						<input type="checkbox" name=k value="q4" />红茶Black tea
+						<input type="checkbox" name=k value="q4" />绿茶Green Tea
+						<input type="checkbox" name=k value="q4" />青茶Oolong tea
+						<input type="checkbox" name=k value="q4" />白茶White tea
+
+
+						<li>您一般怎样饮茶？（可多选）
+                        <br>How do you usually drink tea? (multiple choices are allowed)
+							<br /><input type="checkbox" name=k value="q5" />茶馆teahouse
+							<br /><input type="checkbox" name=k value="q5" />家home
+							<br /><input type="checkbox" name=k value="q5" />奶茶店Milk tea shop
+							<br /><input type="checkbox" name=k value="q5" />甜品店Dessert shop
+							<br /><input type="checkbox" name=k value="q5" />都不是None of them
+						</li>
+					</ol>
+					<br /><button type="submit">提交问卷Submit</button>
+
+
+					<script>
+						function myFunction() {
+							var x;
+							var d = Math.round(Math.random() * 13);
+							switch (d) {
+								case 0:
+									x = "竹下忘言对紫茶，全胜羽客醉流霞。";
+									break;
+								case 1:
+									x = "酒阑更喜团茶苦，梦断偏宜瑞脑香。";
+									break;
+								case 2:
+									x = "无由持一碗，寄与爱茶人。";
+									break;
+								case 3:
+									x = "莫嗔焙茶烟暗，却喜晒谷天晴。";
+									break;
+								case 4:
+									x = "老去逢春如病酒，唯有，茶瓯香篆小帘栊。";
+									break;
+								case 5:
+									x = "此物清高世莫知，世人饮酒多自欺。";
+									break;
+								case 6:
+									x = "凤舞团团饼。恨分破、教孤令。金渠体净，只轮慢碾，玉尘光莹。";
+									break;
+								case 7:
+									x = "尊俎风流战胜，降春睡、开拓愁边。纤纤捧，研膏浅乳，金缕鹧鸪斑。";
+									break;
+								case 8:
+									x = "孰知茶道全尔真，唯有丹丘得如此。";
+									break;
+								case 9:
+									x = "其人视端容寂，若听茶声然。";
+									break;
+								case 10:
+									x = "酒阑更喜团茶苦，梦断偏宜瑞脑香。";
+									break;
+								case 11:
+									x = "被酒莫惊春睡重，赌书消得泼茶香，当时只道是寻常。";
+									break;
+								case 12:
+									x = "寒夜客来茶当酒，竹炉汤沸火初红。";
+									break;
+							}
+							document.getElementById("demo").innerHTML = x;
+						}
+					</script>
+				</div>
+		</form>
+		
+		<a href="index.html"><img src="返回首页.jpg" /></a>
+	</body>
+</html>
+
+
+
