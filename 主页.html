@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>欢迎来到问茶</title>
+		<style>
+			body {
+				background: url(绿灰色背景图.png) no-repeat center center;
+				background-size: cover;
+				/* 让背景图基于容器大小伸缩 */
+				background-attachment: fixed;
+				/* 当内容高度大于图片高度时，背景图像的位置相对于viewport固定 此条属性必须设置否则可能无效*/
+				background-color: #b2cfc2;
+				/* 设置背景颜色，背景图加载过程中会显示背景色 */
+			}
+
+			#left {
+				background-color: #79a996;
+				color: #d6f6e8;
+				height: 800px;
+				width: 550px;
+				float: left;
+				margin-top: 25px;
+			}
+
+			#words {
+				color: #79a996;
+				font-family: NSimSun;
+				/*font-family: FZShouJinShu-S10S;*/
+			}
+
+			#right {
+				background-color: #daf4ed;
+				height: 800px;
+				width: 950px;
+				float: right;
+				margin-top: 25px;
+			}
+
+			footer {
+				background-color: #1f5f4c;
+				color: #f4f7f6;
+				clear: both;
+				text-align: center;
+			}
+
+			#video1 {
+				float: left;
+				height: 400px;
+				width: 950px;
+			}
+
+			video {
+				height: 400px;
+				width: 570px;
+				padding-left: 5px;
+
+				padding-top: 5px;
+			}
+
+			#picture {
+				height: 390px;
+				width: 945px;
+				float: right;
+				background-color: #58c9a8;
+			}
+
+			#poem {
+				float: right;
+				color: #1f5f42;
+				/*font-family: NSimSun;*/
+				background-color: #c6e5d9;
+				text-align: center;
+				width: 370px;
+				height: 397px;
+				padding-top: 5px;
+			}
+
+			img {
+				float: left;
+				width: 510px;
+				height: 320px;
+				margin-top: 50px;
+			}
+
+			nav {
+				display: block;
+				padding: 10px 60px;
+				padding-top: 0;
+				margin-left: 300px;
+			}
+
+			ul {
+				list-style-type: none;
+			}
+
+			a:link,
+			a:visited {
+				display: block;
+				font-weight: bold;
+				color: #f4f7f6;
+				background-color: #7fb2a4;
+				box-shadow: 10px 10px 15px #f4f7f6;
+				width: 200px;
+				padding: 10px;
+				text-align: center;
+				text-decoration: none;
+				text-transform: uppercase;
+
+			}
+
+			a:hover {
+				background-color: #aad0be;
+			}
+
+			a:active {
+				background-color: #79a997;
+			}
+
+			li {
+				float: left;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="picture">
+				<img src="图标.jpg" />
+                </div>
+		<nav>
+			<ul>
+				<li><a href="五城.html">名茶五城</a></li>
+				<li><a href="分类.html">茶叶分类</a></li>
+				<li><a href="茶道.html">茶道</a></li>
+				<li><a href="定制茶语.html">定制茶语</a></li>
+			</ul>
+		</nav>
+		<div id="left">
+			<ul>
+				<li>
+					<h2>HangZhou-West Lake Longjing Tea</h2>
+					<h3>West Lake Longjing is famous for its four wonders of "green color, fragrant, sweet taste and beautiful shape".</h3>
+				</li>
+				<li>
+					<h2>NanJing- Yuhua tea</h2>
+					<h3>Nanjing Yuhua tea is a treasure of green tea</h3>
+				</li>
+				<li>
+					<h2>AnHuiMount- Huangshan Mao Feng</h2>
+					<h3>Hand fried, the tea shape is slightly curly, the taste is mellow and sweet, the aroma is like orchid, and the lasting appeal is deep.</h3>
+				</li>
+				<li>
+					<h2>JiangSu-Biluochun in Dongting</h2>
+					<h3>Biluochun is "Kung Fu tea"<br>The fried dry tea strips are tight, pekoe is exposed, the color is silver green, emerald and attractive, curled into snails, and produced in spring.</h3>
+				</li>
+				<li>
+                <h2>FuJian-Anxi Tieguanyin Tea</h2>
+					<h3>Between green tea and black tea<br>It belongs to semi fermented tea. It has the effects of anti-aging, anti-cancer, weight loss, bodybuilding, sobering up and so on.</h3>
+				</li>
+			</ul>
+		</div>
+		<div id="right">
+
+			<div id="video1">
+				<video src="视频.mp4"></video>
+				<div id="poem">
+					<h2>山泉煎茶有怀</h2>
+					<h3>白居易<br></h3>
+					<h3>坐酌泠泠水，<br></h3>
+					<h3>看煎瑟瑟尘。<br></h3>
+					<h3>无由持一碗，<br></h3>
+					<h3>寄与爱茶人。<br></h3>
+				</div>
+                <div id="picture">
+				<img src="图标.jpg" />
+                </div>
+			</div>
+
+			<div id="picture">
+				<img src="小图1.jpg" />
+				<img style="float: right;width: 435px;" src="茶叶动画.gif" />
+			</div>
+		</div>
+		
+		<footer>
+			sunjiayuan✖sunzhiyan</footer>
+
+	</body>
+</html>
