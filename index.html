@@ -5,7 +5,7 @@
 		<title>欢迎来到问茶</title>
 		<style>
 			body {
-				background: url(img1背景图.jpg) no-repeat center center;
+				background: url(背景图1.jpg) no-repeat center center;
 				background-size: cover;
 				/* 让背景图基于容器大小伸缩 */
 				background-attachment: fixed;
@@ -58,27 +58,13 @@
 			<h2>无由持一碗,寄与爱茶人<br>送给爱茶的你</h2><br>
 			<a href="主页.html" class="dialog-bz-btn"><b>立即探索</b></a>
 		</div>
+<div class="music">
+<audio controls autoplay>
+  <source src="Bwv 974.ogg" type="audio/ogg">
+  <source src="Bwv 974.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+</div>
 
-		<audio id="audio1" autoplay="autoplay" src="music/Richard Sanderson - Reality.flac" preload>
-		</audio>
-		<div class="music">
-			<button id="play" οnclick="toggleMusic()"><img id="start" src="play.png" /></button>
-		</div>
-
-		<script>
-			var music = document.getElementById("audio1");
-			var toggleBtn = document.getElementById("play");
-
-			function toggleMusic() {
-				if (music.paused) {
-					music.play(); //如果音乐未播放则播放音乐
-					document.getElementById("start").src = "pause.png";
-
-				} else {
-					music.pause(); //暂停音乐
-					document.getElementById("start").src = "play.png";
-				}
-			}
-		</script>
 	</body>
 </html>
